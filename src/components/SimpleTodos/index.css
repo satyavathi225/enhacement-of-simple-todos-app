@@ -1,32 +1,119 @@
 /* Write your CSS here */
-.background-container {
+.bg-container {
   background-color: #ffc2a0;
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  min-height: 100vh;
+  padding: 30px;
 }
-.inner-container {
-  background-color: #ffffff;
-  width: 90%;
+
+.card-container {
   display: flex;
-  align-items: center;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
   padding: 10px;
   border-radius: 10px;
 }
-.heading {
+
+.todo-heading {
   color: #ff8542;
-  font-family: 'Roboto';
-  font-size: 30px;
-  font-weight: bold;
-  margin-bottom: 15px;
+  font-weight: 700;
 }
-.list {
+
+.input-container {
   display: flex;
-  flex-direction: column;
-  padding-left: 0;
-  list-style-type: none;
   align-items: center;
-  width:80%;
+  justify-content: space-between;
+  max-width: 500px;
+  flex-wrap: wrap;
+  flex-shrink: 1;
+  width: 100%;
+}
+
+.count-container {
+  flex-shrink: 1;
+  height: 100%;
+  margin-top: 0px;
+  padding: 0px;
+}
+.add-button {
+  background-color: aqua;
+  border-radius: 5px;
+  margin-left: 10px;
+  outline: none;
+  cursor: pointer;
+  padding-left: 10px;
+  padding-right: 10px;
+  border: none;
+  height: 28px;
+}
+
+.input-todo {
+  outline: none;
+  border: solid 1px gray;
+  border-radius: 5px;
+  padding: 5px;
+  height: 100%;
+  width: 100%;
+  max-width: 400px;
+  min-width: 100px;
+  flex: 1;
+}
+
+@media (min-width: 768px) {
+  .input-todo {
+    outline: none;
+    border: solid 1px gray;
+    border-radius: 5px;
+    padding: 5px;
+    height: 100%;
+    width: 100%;
+    max-width: 400px;
+    min-width: 100px;
+    flex: 1;
+  }
+}
+
+.no-of-todos-input {
+  width: 50px;
+  height: 100%;
+  outline: none;
+  border: solid 1px gray;
+  border-radius: 5px;
+  padding: 5px;
+  margin-left: 5px;
+}
+
+@media (min-width: 768px) {
+  .add-button {
+    background-color: aqua;
+    border-radius: 5px;
+    margin-left: 10px;
+    outline: none;
+    cursor: pointer;
+    height: 28px;
+    border: none;
+  }
+
+  .input-todo {
+    outline: none;
+    border: solid 1px gray;
+    border-radius: 5px;
+    padding: 5px;
+    height: 100%;
+  }
+  .no-of-todos-input {
+    width: 50px;
+    height: 100%;
+  }
+}
+
+.todo-ul {
+  width: 100%;
+  flex-wrap: wrap;
+  padding-left: 0px;
+}
+
+.no-of-todos-input {
+  width: 50px;
 }
